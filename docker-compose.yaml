@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  markdown-to-pdf:
+    container_name: node_quickstart
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "docker.pkg.github.com/johnmeyerhoff/node_quickstart/node_quickstart:${TAG:-latest}"
