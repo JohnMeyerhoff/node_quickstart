@@ -25,5 +25,5 @@ RUN npm i -g puppeteer --unsafe-perm=true \
     # same layer as npm install to keep re-chowned files from using up several hundred MBs more space
     && groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser \
     && mkdir -p /home/pptruser/Downloads \
-    && chown -R pptruser:pptruser /home/pptruser \
+    && chown -R pptruser:pptruser /home/pptruser
 RUN fc-cache -fv 
