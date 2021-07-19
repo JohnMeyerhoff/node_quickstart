@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  markdown-to-pdf:
+  node_quickstart:
     container_name: node_quickstart
     build:
       context: .
