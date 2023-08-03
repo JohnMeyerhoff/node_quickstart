@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:20
 RUN apt-get update && \
     apt-get -y install libfontconfig1 ca-certificates \
     fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 \
